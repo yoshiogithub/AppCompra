@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "309670781634",
+    "firebase_url": "https://appcompra-69a16.firebaseio.com",
+    "project_id": "appcompra-69a16",
+    "storage_bucket": "appcompra-69a16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:309670781634:android:e4ee1388c05b7fce96915b",
+        "android_client_info": {
+          "package_name": "com.mycompany.appcompra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "309670781634-32v18286b6pf0rh7ou3s747sq6v3cj9q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.appcompra",
+            "certificate_hash": "2c41a300126d55631017fcfdbba6cabeaf1407df"
+          }
+        },
+        {
+          "client_id": "309670781634-b9k450sj1ge2bcjo2l730hvso5rvp7mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHZsryJgJPvsqqQX67sGrFYUvbX_tYr1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "309670781634-b9k450sj1ge2bcjo2l730hvso5rvp7mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,19 +1,15 @@
 package com.mycompany.appcompra.Entidades;
 
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Producto {
     private String nombre;
-    private String precio;
-    private String msg;
+    private int precio;
+    private int cantidad;
 
-    public Producto(String nombre, String precio) {
+    public Producto(String nombre, int precio, int cantidad) {
         this.nombre = nombre;
         this.precio = precio;
+        this.cantidad=cantidad;
     }
 
     public String getNombre() {
@@ -24,25 +20,19 @@ public class Producto {
         this.nombre = nombre;
     }
 
-    public String getPrecio() {
+    public int getPrecio() {
         return precio;
     }
 
-    public void setPrecio(String precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
 
-    private String nomCodigo(){
-        return nombre.substring(0,3);
+    public int getCantidad() {
+        return cantidad;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private int numAleatorio(){
-        return ThreadLocalRandom.current().nextInt(100,999);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public  String Codigo(){
-        return msg=nomCodigo()+numAleatorio();
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 }

@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(registrar);
     }
 
-
-
     public void Buscar(View view){
         Intent buscar=new Intent(this,BuscarActivity.class);
         startActivity(buscar);
     }
+
+
 }

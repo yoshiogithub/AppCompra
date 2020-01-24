@@ -5,11 +5,13 @@ public class Producto {
     private String nombre;
     private int precio;
     private int cantidad;
+    private int no_cliente;
 
-    public Producto(String nombre, int precio, int cantidad) {
+    public Producto(String nombre, int precio, int cantidad, int no_cliente) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad=cantidad;
+        this.no_cliente=no_cliente;
     }
 
     public String getNombre() {
@@ -28,13 +30,12 @@ public class Producto {
         this.precio = precio;
     }
 
-    public int getCantidad() {
-        return cantidad;
-    }
+    public int getCantidad() {return cantidad;}
 
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
+    public void setCantidad(int cantidad) {this.cantidad = cantidad;}
 
 
+    public int getNo_cliente() {return no_cliente;}
+
+    public void setNo_cliente(int no_cliente) {this.no_cliente = no_cliente;}
 }

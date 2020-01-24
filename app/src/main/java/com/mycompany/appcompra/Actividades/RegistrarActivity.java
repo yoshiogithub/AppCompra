@@ -33,14 +33,18 @@ public class RegistrarActivity extends AppCompatActivity {
         String nombre=Nombre.getText().toString();
         String precio=Precio.getText().toString();
 
-        Map<String,Object>DatosProducto=new HashMap<>();
-        DatosProducto.put("Producto",nombre);
-        DatosProducto.put("Precio",precio);
+        if(nombre.isEmpty() || precio.isEmpty()){
+            Toast.makeText(this, "Complete los campos correspondientes", Toast.LENGTH_SHORT).show();
+        }else {
+            Map<String, Object> DatosProducto = new HashMap<>();
+            DatosProducto.put("Producto", nombre);
+            DatosProducto.put("Precio", precio);
 
-        databaseReference.child("Producto").child(nombre).setValue(DatosProducto);
+            databaseReference.child("Producto").child(nombre).setValue(DatosProducto);
 
-        Toast.makeText(this, "PRODUCTO INGRESADO ("+nombre+")", Toast.LENGTH_SHORT).show();
-        limpiar();
+            Toast.makeText(this, "PRODUCTO INGRESADO (" + nombre + ")", Toast.LENGTH_SHORT).show();
+            limpiar();
+        }
 
     }
 
